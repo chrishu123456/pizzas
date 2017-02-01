@@ -24,5 +24,68 @@ namespace pizzas
         {
             InitializeComponent();
         }
+
+        private void extradikkekorst_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void extrakaas_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ham_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ananas_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void salami_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+                      
+        }
+
+        private void min_Click(object sender, RoutedEventArgs e)
+        {
+            int aantalpizza = int.Parse((string)hoeveelheid.Content);
+
+            if (aantalpizza > 1)
+            {
+                aantalpizza = aantalpizza - 1;
+                hoeveelheid.Content = aantalpizza.ToString();
+            }
+        }
+
+        private void plus_Click(object sender, RoutedEventArgs e)
+        {
+
+            int aantalpizza = int.Parse((string)hoeveelheid.Content);
+
+            if (aantalpizza < 10)
+            {
+                aantalpizza = aantalpizza + 1;
+                hoeveelheid.Content = aantalpizza.ToString();
+            }
+        }
+
+        private void bestellen_Checked(object sender, RoutedEventArgs e)
+        {
+            bestellijn.Content = "hallo";
+        }
+
+        private void bestellen_Unchecked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

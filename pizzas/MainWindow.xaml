@@ -6,7 +6,50 @@
         xmlns:local="clr-namespace:pizzas"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
+    <StackPanel>
+        <TextBox Height="30" HorizontalAlignment="Center" FontSize="20">Pizza Bestellen</TextBox>
+        <StackPanel Height="65" Margin="10" Orientation="Horizontal">
+            <StackPanel Orientation="Vertical" Margin="0 10 0 5">
+                <RadioButton Margin="0">small</RadioButton>
+                <RadioButton Margin="0 2">medium</RadioButton>
+                <RadioButton>large</RadioButton>
+            </StackPanel>
+            <StackPanel Margin="300 10 10 10">
+                <ToggleButton Margin="0 0 0 0" Name="extradikkekorst" Content="extra dikke korst" Click="extradikkekorst_Click"></ToggleButton>
+                <ToggleButton Margin="0 5 0 0" Name="extrakaas" Content="extra kaas" Click="extrakaas_Click"></ToggleButton>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+            <Rectangle Height="1" Width="300" Fill="Black"></Rectangle>
+            <TextBlock>hoeveelheid:</TextBlock>
+            <Label Name="hoeveelheid" Content="1"></Label>
+            <StackPanel Orientation="Vertical">
+                <Button Name="plus" Click="plus_Click"  Content="+"></Button>
+                <Button Name="min" Click="min_Click"  Content="-"></Button>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Margin="0 2 0 0" Height="130" Orientation="Horizontal">
+            <StackPanel Margin="10 10 0 10">
+                <CheckBox Name="tomaat" Content="tomaat" IsChecked="True"></CheckBox>
+                <CheckBox Name="kaas" Content="kaas" IsChecked="True"></CheckBox>
+                <CheckBox Name="ham" Content="ham" Click="ham_Click"></CheckBox>
+                <CheckBox Name="ananas" Content="ananas" Click="ananas_Click"></CheckBox>
+                <CheckBox Name="salami" Content="salami" Click="salami_Click"></CheckBox>
+            </StackPanel>
+            <StackPanel Margin="300 0 0 0">
+                <ToggleButton Name="bestellen" Checked="bestellen_Checked" Unchecked="bestellen_Unchecked">
+                    <StackPanel>
+                        <Image Source="pizza.jpg" MaxHeight="90"></Image>
+                        <Label>Bestellen</Label>
+                    </StackPanel>
+                    
+                </ToggleButton>
+            </StackPanel>
+            
+        </StackPanel>
+        <StackPanel Height="20">
+            <Label Name="bestellijn"></Label>
+        </StackPanel>
         
-    </Grid>
+    </StackPanel>
 </Window>
