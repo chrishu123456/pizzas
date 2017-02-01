@@ -80,7 +80,7 @@ namespace pizzas
 
         private void bestellen_Checked(object sender, RoutedEventArgs e)
         {
-            bestellijn.Content = "hallo";
+            bestellijn.Content = "Aantal pizza's : " + hoeveelheid.Content;
         }
 
         private void bestellen_Unchecked(object sender, RoutedEventArgs e)
