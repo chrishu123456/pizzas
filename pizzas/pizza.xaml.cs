@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace pizzas
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for pizza.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class pizza : Window
     {
-        public MainWindow()
+        public pizza()
         {
             InitializeComponent();
         }
@@ -80,7 +80,36 @@ namespace pizzas
 
         private void bestellen_Checked(object sender, RoutedEventArgs e)
         {
-            bestellijn.Content = "Aantal pizza's : " + hoeveelheid.Content;
+            string smallmediumlarge = "", metham = "", mettomaat = " tomaat, ", metkaas = " kaas, ", metananas = "", metsalami = "", metextradikkekorst = "", metextrakaas = "";
+
+            if (ham.IsChecked == true)
+                metham = " ham, ";
+
+            if (ananas.IsChecked == true)
+                metananas = " ananas, ";
+
+            if (salami.IsChecked == true)
+                metsalami = "salami, ";
+
+            if (extradikkekorst.IsChecked == true)
+                metextradikkekorst = " met extra dikke korst, ";
+
+            if (extrakaas.IsChecked == true)
+                metextrakaas = " met extra kaas, ";
+
+            if (extradikkekorst.IsChecked == true)
+                metextradikkekorst = " met extra dikke korst, ";
+
+            if (extrakaas.IsChecked == true)
+                metextrakaas = " met extra kaas, ";
+
+            if (small.IsChecked == true)
+            { smallmediumlarge = "small"; }
+            else if (medium.IsChecked == true)
+            { smallmediumlarge = "medium"; }
+            else { smallmediumlarge = "large"; }
+
+            bestelling.Content = new TextBlock() { TextWrapping = TextWrapping.Wrap, Text = "U heeft " + hoeveelheid.Content + " " + smallmediumlarge + " pizza('s) besteld met :" + mettomaat + metkaas + metham + metsalami + "overstrooid " + metextradikkekorst + metextrakaas };
         }
 
         private void bestellen_Unchecked(object sender, RoutedEventArgs e)
