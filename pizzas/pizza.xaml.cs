@@ -114,7 +114,7 @@ namespace pizzas
 
         private void bestellen_Unchecked(object sender, RoutedEventArgs e)
         {
-
+            bestelling.Content = new TextBlock() { Text = "" };
         }
     }
 }
