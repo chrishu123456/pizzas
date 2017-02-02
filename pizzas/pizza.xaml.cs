@@ -109,12 +109,12 @@ namespace pizzas
             { smallmediumlarge = "medium"; }
             else { smallmediumlarge = "large"; }
 
-            bestelling.Content = new TextBlock() { TextWrapping = TextWrapping.Wrap, Text = "U heeft " + hoeveelheid.Content + " " + smallmediumlarge + " pizza('s) besteld met :" + mettomaat + metkaas + metham + metsalami + "overstrooid " + metextradikkekorst + metextrakaas };
+            bestelling.Text = "U heeft " + hoeveelheid.Content + " " + smallmediumlarge + " pizza('s) besteld met :" + mettomaat + metkaas + metham + metsalami + "overstrooid " + metextradikkekorst + metextrakaas ;
         }
 
         private void bestellen_Unchecked(object sender, RoutedEventArgs e)
         {
-            bestelling.Content = new TextBlock() { Text = "" };
+            bestelling.Text = "";
         }
     }
 }

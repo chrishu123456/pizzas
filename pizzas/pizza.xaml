@@ -48,7 +48,7 @@
             
         </StackPanel>
         <StackPanel Height="40">
-            <Label Name="bestelling" Height="40"></Label>
+            <TextBlock Name="bestelling" TextWrapping="Wrap" Height="40"></TextBlock>
        </StackPanel>
         
     </StackPanel>
