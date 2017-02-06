@@ -15,8 +15,8 @@
                 <RadioButton Name="large" Content="large" IsChecked="True"></RadioButton>
             </StackPanel>
             <StackPanel Margin="300 10 10 10">
-                <ToggleButton Margin="0 0 0 0" Name="extradikkekorst" Content="extra dikke korst" Click="extradikkekorst_Click"></ToggleButton>
-                <ToggleButton Margin="0 5 0 0" Name="extrakaas" Content="extra kaas" Click="extrakaas_Click"></ToggleButton>
+                <ToggleButton Margin="0 0 0 0" Name="extradikkekorst" Content="extra dikke korst" ></ToggleButton>
+                <ToggleButton Margin="0 5 0 0" Name="extrakaas" Content="extra kaas" ></ToggleButton>
             </StackPanel>
         </StackPanel>
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
@@ -32,9 +32,9 @@
             <StackPanel Margin="10 10 0 10">
                 <CheckBox Name="tomaat" Content="tomaat" IsChecked="True" IsEnabled="False"></CheckBox>
                 <CheckBox Name="kaas" Content="kaas" IsChecked="True" IsEnabled="False"></CheckBox>
-                <CheckBox Name="ham" Content="ham" Click="ham_Click"></CheckBox>
-                <CheckBox Name="ananas" Content="ananas" Click="ananas_Click" ></CheckBox>
-                <CheckBox Name="salami" Content="salami" Click="salami_Click"></CheckBox>
+                <CheckBox Name="ham" Content="ham" ></CheckBox>
+                <CheckBox Name="ananas" Content="ananas"  ></CheckBox>
+                <CheckBox Name="salami" Content="salami" ></CheckBox>
             </StackPanel>
             <StackPanel Margin="300 0 0 0">
                 <ToggleButton Name="bestellen" Checked="bestellen_Checked" Unchecked="bestellen_Unchecked">

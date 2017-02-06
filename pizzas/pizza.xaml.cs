@@ -25,35 +25,6 @@ namespace pizzas
             InitializeComponent();
         }
 
-        private void extradikkekorst_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void extrakaas_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void ham_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void ananas_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void salami_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-                      
-        }
 
         private void min_Click(object sender, RoutedEventArgs e)
         {
@@ -109,7 +80,7 @@ namespace pizzas
             { smallmediumlarge = "medium"; }
             else { smallmediumlarge = "large"; }
 
-            bestelling.Text = "U heeft " + hoeveelheid.Content + " " + smallmediumlarge + " pizza('s) besteld met :" + mettomaat + metkaas + metham + metsalami + "overstrooid " + metextradikkekorst + metextrakaas ;
+            bestelling.Text = "U heeft " + hoeveelheid.Content + " " + smallmediumlarge + " pizza('s) besteld met :" + mettomaat + metkaas + metham + metananas + metsalami + "overstrooid " + metextradikkekorst + metextrakaas ;
         }
 
         private void bestellen_Unchecked(object sender, RoutedEventArgs e)
